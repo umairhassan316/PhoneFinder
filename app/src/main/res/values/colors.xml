@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FFFFFF</color>
+    <color name="purple_700">#EDEDED</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="screen_bg">#EDEDED</color>
+    <color name="buttons_switch_color">#2D66FA</color>
+    <color name="tab_unselected_color">#E4E3E3</color>
+    <color name="tab_selected_color">#FFFFFF</color>
+    <color name="select_border_color">#2D89FA</color>
+    <color name="title_color">#5B5B5B</color>
+    <color name="unselected_color">#A4A4A4</color>
+    <color name="rippelColor">#0099CC</color>
+    <color name="headingtextcolor">#3E3E3E</color>
+    <color name="unselected_dot_color">#2D66FA</color>
+
+
+</resources>

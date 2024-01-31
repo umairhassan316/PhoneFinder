@@ -1,0 +1,6 @@
+<!-- res/drawable/tab_background_selected.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/tab_selected_color" />
+    <corners android:radius="8dp" /> <!-- Adjust the radius as needed -->
+    <size android:height="48dp" />
+</shape>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="switchStyle">
+
+    <item name="colorControlActivated">@color/buttons_switch_color</item>
+    <item name="android:colorForeground">#A4A4A4</item>
+
+</style>
+
+    <style name="TabLayoutTextAppearance">
+        <item name="android:textSize">14sp</item>
+        <item name="fontFamily">@font/montserrat_semibold</item>
+
+    </style>
+
+    <style name="roundedCornersImageView" parent="">
+    <item name="cornerFamily">rounded</item>
+    <item name="cornerSize">22dp</item>
+</style>
+
+
+    <!--    <style name="TabLayoutTextAppearance.Selected">-->
+<!--        <item name="fontFamily">@font/your_selected_font</item>-->
+<!--        <item name="android:textSize">14sp</item>-->
+<!--        &lt;!&ndash; Add other text attributes like textSize, textColor, etc. &ndash;&gt;-->
+<!--    </style>-->
+
+<!--    <style name="TabLayoutTextAppearance.Unselected">-->
+<!--        <item name="android:textSize">14sp</item>-->
+<!--        <item name="fontFamily">@font/your_unselected_font</item>-->
+<!--        &lt;!&ndash; Add other text attributes like textSize, textColor, etc. &ndash;&gt;-->
+<!--    </style>-->
+
+</resources>

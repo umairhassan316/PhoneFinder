@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/screen_bg"
+    tools:context=".fragments.FindByWhistleFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_backpress"
+            android:id="@+id/backPressBtn"
+            android:visibility="gone"
+            android:padding="10dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:fontFamily="@font/opensans_semibold"
+            android:id="@+id/toolbarTitle"
+            android:textColor="@color/white" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.findphone.whistleclapfinder.activity.RippleBackground
+        android:layout_width="338dp"
+        android:layout_height="338dp"
+        android:id="@+id/content"
+        app:rb_color="#2D90FA"
+        android:layout_gravity="center_horizontal"
+        app:rb_radius="32dp"
+        app:rb_rippleAmount="4"
+        app:rb_duration="3000"
+        app:rb_scale="6">
+
+        <FrameLayout
+            android:layout_width="188dp"
+            android:layout_height="188dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/mode_active_layout_bg">
+
+            <ImageView
+                android:id="@+id/icon1"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:src="@drawable/stop_bell_icon" />
+
+        </FrameLayout>
+
+
+
+
+    </com.findphone.whistleclapfinder.activity.RippleBackground>
+
+    <RelativeLayout
+        android:id="@+id/mainRalativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="16dp"
+            android:fontFamily="@font/opensans_semibold"
+            android:layout_marginLeft="16dp"
+            android:text="@string/did_you_found_your_phone"
+            android:textColor="@color/headingtextcolor"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/opensans_semibold"
+            android:layout_marginLeft="16dp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/closeBtn"
+            android:text="@string/ifoundit"
+            android:background="@drawable/btn_layout_bg"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</LinearLayout>

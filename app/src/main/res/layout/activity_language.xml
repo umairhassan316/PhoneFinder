@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/screen_bg"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:id="@+id/mainRalativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:backgroundTint="@color/white"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_backpress"
+                android:id="@+id/backPressBtn"
+                android:padding="10dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/language"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:fontFamily="@font/opensans_semibold"
+                android:id="@+id/toolbarTitle"
+                android:textColor="@color/title_color" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/language_check_icon"
+                android:layout_gravity="right"
+                android:id="@+id/checkBtn"
+                android:padding="10dp"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:background="@drawable/sub_setting_layout_bg"
+                android:layout_below="@+id/toolbar">
+
+=
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:listitem="@layout/language_item_layout"
+                    android:id="@+id/languageRecyclerView"/>
+
+
+            </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

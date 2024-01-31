@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/screen_bg"
+    tools:context=".clase.fragments.FindByWhistleFragment">
+
+    <LinearLayout
+        android:layout_width="104dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="33dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/mode_not_active_layout_bg"
+            android:gravity="center"
+            android:id="@+id/activeDactiveBtn"
+            android:orientation="vertical">
+
+
+
+
+            <ImageView
+                android:layout_width="51.64dp"
+                android:layout_height="45.62dp"
+                android:src="@drawable/dog_icon"
+                android:id="@+id/icon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="On"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#404040"
+                android:fontFamily="@font/opensans_regular"
+                android:id="@+id/onOffTextView"/>
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cat Animals"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="14dp"
+        android:textColor="#404040"
+        android:fontFamily="@font/opensans_regular"
+        android:id="@+id/nameText"/>
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        tools:listitem="@layout/ring_tune_item"
+        android:layout_marginBottom="22dp"
+        android:id="@+id/ringRecylerview"/>
+
+
+</LinearLayout>

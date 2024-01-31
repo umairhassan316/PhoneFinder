@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/screen_bg"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <!--    <FrameLayout-->
+    <!--        android:id="@+id/frame_container"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content" />-->
+
+    <RelativeLayout
+        android:id="@+id/mainRalativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:backgroundTint="@color/white"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_backpress"
+                android:id="@+id/backPressBtn"
+                android:padding="10dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/settings"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:fontFamily="@font/opensans_semibold"
+                android:id="@+id/toolbarTitle"
+                android:textColor="@color/title_color" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp"
+            android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:background="@drawable/sub_setting_layout_bg"
+            android:layout_below="@+id/toolbar">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="29dp">
+
+                <ImageView
+                    android:layout_width="18.68dp"
+                    android:layout_height="417.86dp"
+                    android:src="@drawable/sensitivity_icon"
+                    android:id="@+id/sensitivity_icon"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/sensitivity"
+                    android:textColor="@color/black"
+                    android:layout_toRightOf="@+id/sensitivity_icon"
+                    android:fontFamily="@font/opensans_semibold"
+                    android:textSize="16sp" />
+
+
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:background="@drawable/sub_setting_icon_layout_bg">
+
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp">
+
+                    <SeekBar
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:min="0"
+                        android:max="100"
+                        android:progress="10"
+                        android:progressTint="@color/buttons_switch_color"
+                        android:progressDrawable="@drawable/custom_seekbar"
+                        android:thumb="@drawable/thumb_icon"
+                        android:progressBackgroundTint="#D1D1D1"
+                        android:id="@+id/seekbarSensitivity"
+                        android:layout_toLeftOf="@+id/progressTextview"
+                        android:layout_centerVertical="true"/>
+
+                    <TextView
+                        android:layout_width="16dp"
+                        android:layout_height="15dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:id="@+id/progressTextview"
+                        android:layout_alignParentRight="true"
+                        android:text="33"
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:clickable="true"
+                        android:layout_centerVertical="true"
+                        />
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="26dp">
+
+                <ImageView
+                    android:layout_width="18.68dp"
+                    android:layout_height="417.86dp"
+                    android:src="@drawable/extension_icon"
+                    android:id="@+id/extension_icon"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/extension"
+                    android:textColor="@color/headingtextcolor"
+                    android:layout_toRightOf="@+id/extension_icon"
+                    android:fontFamily="@font/opensans_semibold"
+                    android:textSize="16sp" />
+
+
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:background="@drawable/sub_setting_icon_layout_bg">
+
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/light_up_screen_while_searching"
+                        android:textColor="@color/headingtextcolor"
+                        android:fontFamily="@font/opensans_regular"
+                        android:textSize="14sp"/>
+
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/extention_check"
+                        android:layout_width="45dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:checked="true"
+                        android:theme="@style/switchStyle"
+                        app:theme="@style/switchStyle" />
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="26dp">
+
+                <ImageView
+                    android:layout_width="18.68dp"
+                    android:layout_height="417.86dp"
+                    android:src="@drawable/flash_mode_icon"
+                    android:id="@+id/flash_mode_icon"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/flash_mode"
+                    android:textColor="@color/headingtextcolor"
+                    android:layout_toRightOf="@+id/flash_mode_icon"
+                    android:fontFamily="@font/opensans_semibold"
+                    android:textSize="16sp" />
+
+
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="158dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/sub_setting_icon_layout_bg">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="17dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:text="@string/ddefault"
+                            android:textColor="@color/headingtextcolor"
+                            android:id="@+id/discodefaultTextView"
+                            android:fontFamily="@font/opensans_regular"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:text="@string/disco_mode"
+                            android:textColor="@color/headingtextcolor"
+                            android:layout_below="@+id/discodefaultTextView"
+                            android:layout_marginTop="32dp"
+                            android:id="@+id/discoModeTextview"
+                            android:fontFamily="@font/opensans_regular"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:text="@string/sosmode"
+                            android:textColor="@color/headingtextcolor"
+                            android:layout_below="@+id/discoModeTextview"
+                            android:layout_marginTop="30dp"
+                            android:fontFamily="@font/opensans_regular"
+                            android:textSize="14sp" />
+
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:layout_height="match_parent">
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:id="@+id/flashModeRadioGroupBtn"
+                            android:layout_height="wrap_content">
+
+                            <!-- In RadioGroup create the 1 Radio Button-->
+                            <!-- like this we will add some more Radio Button-->
+                            <RadioButton
+                                android:layout_width="26dp"
+                                android:layout_height="24dp"
+                                android:text="default"
+                                android:theme="@style/switchStyle"
+                                app:theme="@style/switchStyle"
+                                android:id="@+id/flashdefult"
+                                />
+
+                            <RadioButton
+                                android:layout_width="26dp"
+                                android:layout_height="24dp"
+                                android:layout_marginTop="28dp"
+                                android:text="discoMode"
+                                android:theme="@style/switchStyle"
+                                app:theme="@style/switchStyle"
+                                android:id="@+id/discoMode"/>
+
+                            <RadioButton
+                                android:layout_width="26dp"
+                                android:layout_height="24dp"
+                                android:layout_marginTop="26dp"
+                                android:text="sosMode"
+                                android:theme="@style/switchStyle"
+                                app:theme="@style/switchStyle"
+                                android:id="@+id/sosMode"/>
+
+                        </RadioGroup>
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="26dp">
+
+                <ImageView
+                    android:layout_width="18.68dp"
+                    android:layout_height="417.86dp"
+                    android:src="@drawable/vibration__mode_icon"
+                    android:id="@+id/vibration__mode_icon"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/vibration_mode"
+                    android:textColor="@color/headingtextcolor"
+                    android:layout_toRightOf="@+id/vibration__mode_icon"
+                    android:fontFamily="@font/opensans_semibold"
+                    android:textSize="16sp" />
+
+
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="208dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/sub_setting_icon_layout_bg">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="17dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:text="@string/ddefault"
+                            android:textColor="@color/headingtextcolor"
+                            android:id="@+id/defaultTextView"
+                            android:fontFamily="@font/opensans_regular"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:text="@string/strong_vibration"
+                            android:textColor="@color/headingtextcolor"
+                            android:layout_below="@+id/defaultTextView"
+                            android:layout_marginTop="32dp"
+                            android:id="@+id/strongVibrationTextview"
+                            android:fontFamily="@font/opensans_regular"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:text="@string/heartbeat"
+                            android:textColor="@color/headingtextcolor"
+                            android:layout_below="@+id/strongVibrationTextview"
+                            android:id="@+id/heartbeatTextview"
+                            android:layout_marginTop="30dp"
+                            android:fontFamily="@font/opensans_regular"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:text="@string/ticktok"
+                            android:textColor="@color/headingtextcolor"
+                            android:layout_below="@+id/heartbeatTextview"
+                            android:layout_marginTop="30dp"
+                            android:fontFamily="@font/opensans_regular"
+                            android:textSize="14sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:layout_height="match_parent">
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:id="@+id/vibrationModeRadioGroupBtn"
+                            android:layout_height="wrap_content">
+
+                            <!-- In RadioGroup create the 1 Radio Button-->
+                            <!-- like this we will add some more Radio Button-->
+                            <RadioButton
+                                android:layout_width="26dp"
+                                android:layout_height="24dp"
+                                android:text="defaultVibration"
+                                android:theme="@style/switchStyle"
+                                app:theme="@style/switchStyle"
+                                android:id="@+id/defaultVibration"
+                                />
+
+                            <RadioButton
+                                android:layout_width="26dp"
+                                android:layout_height="24dp"
+                                android:text="strong vibration"
+                                android:id="@+id/strongVibration"
+                                android:theme="@style/switchStyle"
+                                app:theme="@style/switchStyle"
+                                android:layout_marginTop="28dp"/>
+
+                            <RadioButton
+                                android:layout_width="26dp"
+                                android:layout_height="24dp"
+                                android:text="heartbeat"
+                                android:id="@+id/heartbeat"
+                                android:theme="@style/switchStyle"
+                                app:theme="@style/switchStyle"
+                                android:layout_marginTop="26dp"/>
+
+                            <RadioButton
+                                android:layout_width="26dp"
+                                android:layout_height="24dp"
+                                android:text="tiktok"
+                                android:id="@+id/tiktok"
+                                android:theme="@style/switchStyle"
+                                app:theme="@style/switchStyle"
+                                android:layout_marginTop="26dp"
+                                />
+                        </RadioGroup>
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="26dp">
+
+                <ImageView
+                    android:layout_width="18.68dp"
+                    android:layout_height="417.86dp"
+                    android:src="@drawable/language_icon"
+                    android:id="@+id/language_icon"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/language"
+                    android:textColor="@color/headingtextcolor"
+                    android:layout_toRightOf="@+id/language_icon"
+                    android:fontFamily="@font/opensans_semibold"
+                    android:textSize="16sp" />
+
+
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:id="@+id/languageBtn"
+                android:background="@drawable/sub_setting_icon_layout_bg">
+
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/english"
+                        android:id="@+id/languageName"
+                        android:textColor="@color/headingtextcolor"
+                        android:fontFamily="@font/opensans_regular"
+                        android:textSize="14sp" />
+
+
+                    <ImageView
+                        android:id="@+id/englishLenguageBtn"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/again_icon"/>
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

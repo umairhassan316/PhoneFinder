@@ -1,0 +1,44 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Flash Light On</string>
+    <string name="not_disturb_detail">Gestionar Modos de Sonido.</string>
+    <string name="next">Siguiente</string>
+    <!-- TODO: Elimina o cambia este texto de marcador de posición -->
+    <string name="find_by_whistle">Encontrar por Silbido</string>
+    <string name="find_by_clap">Encontrar por Palmada</string>
+    <string name="duration">Duración</string>
+    <string name="apply_changes">APLICAR CAMBIOS</string>
+    <string name="sensitivity">Sensibilidad</string>
+    <string name="settings">Ajustes</string>
+    <string name="extension">Extensión</string>
+    <string name="light_up_screen_while_searching">Iluminar la pantalla durante la búsqueda</string>
+    <string name="flash_mode">Modo de Flash</string>
+    <string name="vibration_mode">Modo de Vibración</string>
+    <string name="strong_vibration">Vibración Fuerte</string>
+    <string name="heartbeat">Latido</string>
+    <string name="ticktok">Ticktok</string>
+    <string name="disco_mode">Modo Disco</string>
+    <string name="language">Idioma</string>
+    <string name="guitar">guitarra</string>
+    <string name="trumpet">trompeta</string>
+    <string name="chicken">pollo</string>
+    <string name="ambulance">ambulancia</string>
+    <string name="frog">rana</string>
+    <string name="cat">gato</string>
+    <string name="dog">perro</string>
+    <string name="scooter">patinete</string>
+    <string name="play_history">Historial de Reproducción</string>
+    <string name="tap_to_turn_off">Toca para Apagar</string>
+    <string name="tap_to_turn_on">Toca para Encender</string>
+    <string name="on">ENCENDIDO</string>
+    <string name="off">APAGADO</string>
+    <string name="flash">Flash</string>
+    <string name="vibration">Vibración</string>
+    <string name="sound">Sonido</string>
+    <string name="ddefault">Predeterminado</string>
+    <string name="sosmode">Modo SOS</string>
+    <string name="spanish" tools:ignore="ExtraTranslation">Español</string>
+    <string name="hindi">हिन्दी</string>
+    <string name="english">English</string>
+    <string name="arabic">عربي</string>
+
+</resources>

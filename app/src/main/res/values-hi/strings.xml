@@ -1,0 +1,43 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Flash Light On</string>
+    <string name="not_disturb_detail">ध्वनि मोड प्रबंधित करें</string>
+    <string name="next">आगे</string>
+    <!-- TODO: हटाएं या इस प्लेसहोल्डर पाठ को बदलें -->
+    <string name="find_by_whistle">सीटी से खोजें</string>
+    <string name="find_by_clap">दाढ़ी से खोजें</string>
+    <string name="duration">अवधि</string>
+    <string name="apply_changes">परिवर्तन लागू करें</string>
+    <string name="sensitivity">संवेग</string>
+    <string name="settings">सेटिंग्स</string>
+    <string name="extension">एक्सटेंशन</string>
+    <string name="light_up_screen_while_searching">खोज के दौरान स्क्रीन प्रकाशित करें</string>
+    <string name="flash_mode">फ़्लैश मोड</string>
+    <string name="vibration_mode">वाइब्रेशन मोड</string>
+    <string name="strong_vibration">मजबूत वाइब्रेशन</string>
+    <string name="heartbeat">हार्टबीट</string>
+    <string name="ticktok">टिकटॉक</string>
+    <string name="disco_mode">डिस्को मोड</string>
+    <string name="language">भाषा</string>
+    <string name="guitar">गिटार</string>
+    <string name="trumpet">तुरही</string>
+    <string name="chicken">मुर्गा</string>
+    <string name="ambulance">एम्ब्युलेंस</string>
+    <string name="frog">मेंढ़क</string>
+    <string name="cat">बिल्ली</string>
+    <string name="dog">कुत्ता</string>
+    <string name="scooter">स्कूटर</string>
+    <string name="play_history">खेल इतिहास</string>
+    <string name="tap_to_turn_off">बंद करने के लिए टैप करें</string>
+    <string name="tap_to_turn_on">चालने के लिए टैप करें</string>
+    <string name="on">चालू</string>
+    <string name="off">बंद</string>
+    <string name="flash">फ़्लैश</string>
+    <string name="vibration">वाइब्रेशन</string>
+    <string name="sound">ध्वनि</string>
+    <string name="ddefault">डिफ़ॉल्ट</string>
+    <string name="sosmode">SOS मोड</string>
+    <string name="spanish">Español</string>
+    <string name="hindi" tools:ignore="ExtraTranslation">हिन्दी</string>
+    <string name="english">English</string>
+    <string name="arabic">عربي</string>
+</resources>

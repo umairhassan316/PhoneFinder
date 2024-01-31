@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Whistle &amp; Clap Phone Finder</string>
+    <string name="not_disturb_detail">Manage Sound Modes.</string>
+    <string name="next">Next</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="find_by_whistle">Find By Whistle</string>
+    <string name="find_by_clap">Find By Clap</string>
+    <string name="duration">Duration</string>
+    <string name="apply_changes">APPLY CHANGES</string>
+    <string name="sensitivity">Sensitivity</string>
+    <string name="settings">Settings</string>
+    <string name="extension">Extension</string>
+    <string name="light_up_screen_while_searching">Light up Screen while searching</string>
+    <string name="flash_mode">Flash Mode</string>
+    <string name="vibration_mode">Vibration Mode</string>
+    <string name="strong_vibration">Strong Vibration</string>
+    <string name="heartbeat">Heartbeat</string>
+    <string name="ticktok">Ticktok</string>
+    <string name="disco_mode">Disco Mode</string>
+    <string name="english">English</string>
+    <string name="language">Language</string>
+    <string name="guitar">guitar</string>
+    <string name="trumpet">trumpet</string>
+    <string name="chicken">chicken</string>
+    <string name="ambulance">ambulance</string>
+    <string name="frog">frog</string>
+    <string name="cat">cat</string>
+    <string name="dog">dog</string>
+    <string name="scooter">scooter</string>
+    <string name="play_history">Play History</string>
+    <string name="tap_to_turn_off">Tap To Turn Off</string>
+    <string name="tap_to_turn_on">Tap To Turn On</string>
+    <string name="on">ON</string>
+    <string name="off">OFF</string>
+    <string name="flash">Flash</string>
+    <string name="vibration">Vibration</string>
+    <string name="sound">Sound</string>
+    <string name="ddefault">Default</string>
+    <string name="sosmode">SOS Mode</string>
+    <string name="arabic">عربي</string>
+    <string name="hindi">हिन्दी</string>
+    <string name="spanish">Español</string>
+    <string name="overlay_permission_details">Allow display over other apps.</string>
+    <string name="overlay_permission_title">Overlay Permission.</string>
+    <string name="micro_phone_title">Record Permission.</string>
+    <string name="micro_phone_details">Allow the app to listen for clapping and whistle.</string>
+    <string name="camera_details">Camera Permission: Enable device access to capture images and videos, facilitating seamless integration with other applications and services.</string>
+    <string name="ifoundit">i found it</string>
+    <string name="continue_splash">Continue</string>
+    <string name="did_you_found_your_phone">Did you found your phone?</string>
+    <string name="allow">Allow</string>
+    <string name="permission_details">App need few permission to response perfectly on clapping/whistle.</string>
+    <string name="skip">SKIP</string>
+
+</resources>

@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/screen_bg"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:backgroundTint="@color/white"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Request Permission"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/opensans_semibold"
+            android:id="@+id/toolbarTitle"
+            android:textColor="@color/title_color" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:weightSum="1">
+
+
+
+
+        <LinearLayout
+            android:layout_width="223dp"
+            android:layout_height="127dp"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="48dp">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/permission_screen_icon"
+                />
+
+
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/permission_details"
+            android:gravity="center"
+            android:layout_marginTop="33dp"
+            android:textColor="@color/headingtextcolor"
+            android:fontFamily="@font/opensans_semibold"
+            android:textSize="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+            android:layout_marginTop="26dp"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <!--
+                        /* first time whan open screen this do not disturb access means audio on,off and vibrate set permission allow setting */
+            -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/sub_setting_icon_layout_bg"
+                android:weightSum="1"
+                android:orientation="horizontal">
+
+           <LinearLayout
+               android:layout_width="0dp"
+               android:layout_weight="0.7"
+               android:layout_height="wrap_content"
+               android:paddingLeft="16dp"
+               android:orientation="vertical">
+
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="@string/not_disturb_detail"
+                   android:textColor="@color/headingtextcolor"
+                   android:fontFamily="@font/opensans_semibold"
+                   android:textSize="16dp" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/not_disturb_detail"
+                   android:textColor="@color/headingtextcolor"
+                   android:paddingTop="3dp"
+                   android:fontFamily="@font/opensans_regular"
+                   android:textSize="14sp" />
+
+
+           </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="85dp"
+                        android:layout_height="40dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:fontFamily="@font/opensans_semibold"
+                        android:id="@+id/audioBtn"
+                        android:text="@string/allow"
+                        android:background="@drawable/btn_layout_bg"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="85dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/tick_icon"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:fontFamily="@font/opensans_semibold"
+                        android:id="@+id/audioTickIcon"
+                        />
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+            <!--
+            /* this permission camera Permission */
+-->
+
+
+
+            <!-- this setting permission this actually Micro Phone permission -->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="center_vertical"
+                android:weightSum="1"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/sub_setting_icon_layout_bg"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/micro_phone_title"
+                        android:textColor="@color/headingtextcolor"
+                        android:fontFamily="@font/opensans_semibold"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/micro_phone_details"
+                        android:paddingTop="3dp"
+                        android:textColor="@color/headingtextcolor"
+                        android:fontFamily="@font/opensans_regular"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="85dp"
+                        android:layout_height="40dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:fontFamily="@font/opensans_semibold"
+                        android:id="@+id/mickPhoneBtn"
+                        android:text="@string/allow"
+                        android:background="@drawable/btn_layout_bg"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="85dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/tick_icon"
+                        android:clickable="true"
+                        android:visibility="gone"
+                        android:focusable="true"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:fontFamily="@font/opensans_semibold"
+                        android:id="@+id/mickPhoneTickIcon"
+                        />
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+            <!-- this setting permission this actually Micro Phone permission -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="center_vertical"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/sub_setting_icon_layout_bg"
+                android:weightSum="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/overlay_permission_title"
+                        android:textColor="@color/headingtextcolor"
+                        android:fontFamily="@font/opensans_semibold"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/overlay_permission_details"
+                        android:paddingTop="3dp"
+                        android:textColor="@color/headingtextcolor"
+                        android:fontFamily="@font/opensans_regular"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="85dp"
+                        android:layout_height="40dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:fontFamily="@font/opensans_semibold"
+                        android:id="@+id/overlayBtn"
+                        android:text="@string/allow"
+                        android:background="@drawable/btn_layout_bg"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="85dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/tick_icon"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:visibility="gone"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:fontFamily="@font/opensans_semibold"
+                        android:id="@+id/overlayTickIcon"
+                        />
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/btn_layout_bg"
+                android:gravity="center"
+                android:fontFamily="@font/montserrat_medium"
+                android:id="@+id/nextBtn"
+                android:layout_marginBottom="16dp"
+                android:text="@string/next"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

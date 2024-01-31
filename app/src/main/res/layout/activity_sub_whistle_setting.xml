@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/screen_bg"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <!--    <FrameLayout-->
+    <!--        android:id="@+id/frame_container"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content" />-->
+
+    <RelativeLayout
+        android:id="@+id/mainRalativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:backgroundTint="@color/white"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_backpress"
+                android:id="@+id/backPressBtn"
+                android:padding="10dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:fontFamily="@font/opensans_semibold"
+                android:id="@+id/toolbarTitle"
+                android:textColor="@color/title_color" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="417dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:background="@drawable/sub_setting_layout_bg"
+            android:layout_below="@+id/toolbar">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="99dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/sub_setting_icon_layout_bg">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:listitem="@layout/change_image_item"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    android:id="@+id/imageChangeRecylerview"/>
+
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="36dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/flash"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/opensans_semibold"
+                    android:textSize="16sp" />
+
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/flash_check"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:checked="true"
+                    android:theme="@style/switchStyle"
+                    app:theme="@style/switchStyle" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="26dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/vibration"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/opensans_semibold"
+                    android:textSize="16sp" />
+
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:layout_width="45dp"
+                    android:layout_height="18dp"
+                    android:checked="true"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:theme="@style/switchStyle"
+                    app:theme="@style/switchStyle"
+                    android:id="@+id/vibration_check"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="26dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/sound"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/opensans_semibold"
+                    android:textSize="16sp" />
+
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:layout_width="45dp"
+                    android:layout_height="18dp"
+                    android:checked="true"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:theme="@style/switchStyle"
+                    app:theme="@style/switchStyle"
+                    android:id="@+id/sound_check"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp">
+
+                <SeekBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:min="0"
+                    android:max="100"
+                    android:progress="10"
+                    android:progressTint="@color/buttons_switch_color"
+                    android:progressDrawable="@drawable/custom_seekbar"
+                    android:thumb="@drawable/thumb_icon"
+                    android:id="@+id/seekbarSound"
+                    android:layout_toLeftOf="@+id/progressTextview"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:layout_width="16dp"
+                    android:layout_height="15dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:id="@+id/progressTextview"
+                    android:layout_alignParentRight="true"
+                    android:text="33"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:clickable="true"
+                    android:layout_centerVertical="true"
+                    />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/duration"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/opensans_regular"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:id="@+id/tenSecondLayout"
+                        android:background="@drawable/duration_item_border_color_bg">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10s"
+                            android:textColor="#2D81FA"
+                            android:id="@+id/tenTextview"
+                            android:fontFamily="@font/opensans_regular"
+                            android:textSize="12sp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/fifteenSecondLayout"
+                        android:background="@drawable/duration_item_border_color_bg">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="15s"
+                            android:textColor="#2D81FA"
+                            android:id="@+id/fifteenTextview"
+                            android:fontFamily="@font/opensans_regular"
+                            android:textSize="12sp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/tharteenSecondLayout"
+                        android:background="@drawable/duration_item_border_color_bg">
+<!--                        android:background="@drawable/duration_active_layout_bg">-->    <!--color background-->
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="30s"
+                            android:textColor="#2D81FA"
+                            android:id="@+id/tharteenTextview"
+                            android:fontFamily="@font/opensans_regular"
+                            android:textSize="12sp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:id="@+id/oneMinutLayout"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/duration_item_border_color_bg">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1m"
+                            android:textColor="#2D81FA"
+                            android:id="@+id/oneMinutTextview"
+                            android:fontFamily="@font/opensans_regular"
+                            android:textSize="12sp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:fontFamily="@font/opensans_semibold"
+        android:layout_marginLeft="16dp"
+        android:id="@+id/applyBtn"
+        android:text="@string/apply_changes"
+        android:background="@drawable/btn_layout_bg"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>

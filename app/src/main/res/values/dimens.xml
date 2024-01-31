@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="rippleStrokeWidth">2dp</dimen>
+    <dimen name="rippleRadius">64dp</dimen>
+    <dimen name="selected_dot_width">35dp</dimen>
+    <dimen name="unselected_dot_width">9dp</dimen>
+</resources>

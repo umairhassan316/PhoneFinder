@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.85"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <!-- Dots and Next Button Container -->
+        <LinearLayout
+            android:id="@+id/dotsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <!-- Three dots for three screens -->
+            <View
+                android:id="@+id/dot1"
+                android:layout_width="35dp"
+                android:layout_height="9dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/tab_dot_selected" />
+
+            <View
+                android:id="@+id/dot2"
+                android:layout_width="9dp"
+                android:layout_height="9dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/tab_dot_selected" />
+
+            <View
+                android:id="@+id/dot3"
+                android:layout_width="9dp"
+                android:layout_height="9dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/tab_dot_selected" />
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.15"
+            android:orientation="horizontal"
+            android:gravity="bottom"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:weightSum="1">
+
+
+
+
+               />
+
+            <TextView
+                android:layout_width="162dp"
+                android:layout_height="50dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/opensans_semibold"
+                android:id="@+id/btnSkip"
+                android:text="@string/skip"
+                android:textColor="#2D70FA"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="162dp"
+                android:layout_height="50dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/opensans_semibold"
+                android:id="@+id/btnNext"
+                android:text="@string/next"
+                android:background="@drawable/btn_layout_bg"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

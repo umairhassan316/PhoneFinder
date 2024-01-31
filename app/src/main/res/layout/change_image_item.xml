@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="81dp"
+        android:layout_height="79dp"
+        android:id="@+id/mainLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/activeDactiveBtn"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="51.64dp"
+                android:layout_height="45.62dp"
+                android:src="@drawable/cat_icon"
+                android:id="@+id/icon"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/screen_bg"
+    android:layout_height="match_parent">
+
+    <!--    <FrameLayout-->
+    <!--        android:id="@+id/frame_container"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content" />-->
+
+    <RelativeLayout
+        android:id="@+id/mainRalativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:backgroundTint="@color/white"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/play_history"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:id="@+id/toolbarTitle"
+                android:textColor="@color/title_color" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:paddingLeft="10dp"
+                android:src="@drawable/main_setting_icon"
+                android:id="@+id/settingBtn"
+                android:layout_marginRight="18.69dp"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <!--        <com.google.android.material.appbar.AppBarLayout-->
+        <!--            android:id="@+id/appbarlayout"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_below="@+id/toolbar"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginLeft="10dp"-->
+        <!--            android:layout_marginRight="10dp"-->
+        <!--            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">-->
+
+
+
+        <!--            <com.google.android.material.tabs.TabLayout-->
+        <!--                android:id="@+id/tabs"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="46dp"-->
+        <!--                android:layout_below="@+id/toolbar"-->
+        <!--                android:background="@drawable/tab_background"-->
+        <!--                android:layout_marginLeft="16dp"-->
+        <!--                android:layout_marginRight="16dp"-->
+        <!--                android:layout_marginTop="10dp"-->
+        <!--                app:tabIndicator="@drawable/custom_tab_indicator"-->
+        <!--                app:tabGravity="fill"-->
+        <!--                app:tabTextAppearance="@style/TabLayoutTextAppearance"-->
+        <!--                app:tabMode="fixed"-->
+
+
+
+        <!--                />-->
+        <!--        </com.google.android.material.appbar.AppBarLayout>-->
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/screen_bg"
+            app:tabIndicator="@null"
+            app:tabSelectedTextColor="@color/white"
+            app:tabTextColor="@color/black" />
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_below="@id/tabs"
+            android:background="@null" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

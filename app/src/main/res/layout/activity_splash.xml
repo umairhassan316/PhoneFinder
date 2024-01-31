@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/splash_bg">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="368dp"
+        android:layout_marginTop="91dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="106dp"
+            android:layout_height="106dp"
+            android:layout_marginLeft="8dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/splash_flash_icon"
+            app:shapeAppearanceOverlay="@style/roundedCornersImageView" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/splash_icon"
+            android:layout_height="368dp"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="337dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/sofa" />
+
+        <ImageView
+            android:layout_width="113.51dp"
+            android:layout_height="300dp"
+            android:visibility="gone"
+            android:layout_marginTop="60dp"
+            android:src="@drawable/splash_leady_image" />
+
+    </RelativeLayout>
+
+    </FrameLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="259dp"
+        android:layout_height="wrap_content"
+        android:text="Find Nearby Lost Mobile By Clap/Whistle, with Various Sound Effects"
+        android:textSize="22.11dp"
+        android:fontFamily="@font/opensans_semibold"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/opensans_semibold"
+        android:layout_marginLeft="16dp"
+        android:id="@+id/continueBtn"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:text="@string/continue_splash"
+        android:background="@drawable/btn_layout_bg"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+
+
+
+</RelativeLayout>
+
+
+</LinearLayout>
